@@ -25,18 +25,18 @@
       <br>
       <mat-form-field>
         <mat-label>Sintomas</mat-label>
-        <input matInput formControlName="description">
+        <input matInput formControlName="sintomas">
 
-        <mat-error *ngIf="form.get('description')?.hasError('required')">
+        <mat-error *ngIf="form.get('sintomas')?.hasError('required')">
           Los sintomas de la enfermedad es obligatorio!!
         </mat-error>
       </mat-form-field>
       <br>
       <mat-form-field>
         <mat-label>Nivel de riesgo</mat-label>
-        <input matInput formControlName="description">
+        <input matInput formControlName="nivelRiesgo">
 
-        <mat-error *ngIf="form.get('description')?.hasError('required')">
+        <mat-error *ngIf="form.get('nivelRiesgo')?.hasError('required')">
           El nivel de riesgo de la enfermedad es obligatorio!!
         </mat-error>
       </mat-form-field>
@@ -50,3 +50,4 @@
     </form>
   </div>
 </div>
+
