@@ -1,5 +1,5 @@
 .custom-toolbar {
- background-color: rgb(53, 194, 124);
+ background-color: #35c27c;
 }
 
 
@@ -11,7 +11,7 @@
 }
 
 .btn-rojo mat-icon {
- color: rgb(28, 25, 150);
+ color: rgb(255, 255, 255);
 }
 
 
@@ -24,7 +24,7 @@
 }
 
 .btn-azul mat-icon {
- color: rgb(28, 25, 150);
+ color: rgb(255, 255, 255);
 }
 
 
@@ -32,5 +32,6 @@
 
 .custom-toolbar button,
 .custom-toolbar mat-icon {
- color: rgb(7, 0, 0);
+ color: rgb(0, 0, 0);
 }
+
