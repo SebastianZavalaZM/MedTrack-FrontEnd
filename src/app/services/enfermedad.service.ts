@@ -20,8 +20,8 @@ export class EnfermedadService {
   list() {
     return this.http.get<Enfermedad[]>(`${this.url}/listas`);
   }
-  insert(t: Enfermedad) {
-  return this.http.post(`${this.url}/registra`, t);
+  insert(e: Enfermedad) {
+  return this.http.post(`${this.url}/registra`, e);
   }
 
   setList(listaNueva: Enfermedad[]) {
@@ -35,13 +35,20 @@ export class EnfermedadService {
     return this.http.get<Enfermedad>(`${this.url}/${id}`);
   }
 
-  update(t: Enfermedad) {
-    return this.http.put(this.url, t);
+  update(e: Enfermedad) {
+    return this.http.put(this.url, e);
   }
 
   deleteS(id: number) {
     return this.http.delete(`${this.url}/${id}`);
   }
 
+  contarPorNivelRiesgo() {
+    return this.http.get<[string, number][]>(`${this.url}/contar-nivel-riesgo`);
+  }
+
+
+
   
 }
+
