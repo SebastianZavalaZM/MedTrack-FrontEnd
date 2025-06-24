@@ -21,7 +21,7 @@ export class TipoenfermedadService {
     return this.http.get<TipoEnfermedad[]>(`${this.url}/listas`);
   }
   insert(t: TipoEnfermedad) {
-    return this.http.post(this.url, t);
+  return this.http.post(`${this.url}/registra`, t);
   }
 
   setList(listaNueva: TipoEnfermedad[]) {
@@ -43,5 +43,11 @@ export class TipoenfermedadService {
     return this.http.delete(`${this.url}/${id}`);
   }
 
+  searchNombre(p: string) {
+    const params = { palabra: p };
+    return this.http.get<TipoEnfermedad[]>(`${this.url}/buscarPorNombre`, { params });
+  }
+
   
 }
+
