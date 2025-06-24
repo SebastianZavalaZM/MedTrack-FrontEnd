@@ -15,5 +15,5 @@ mat-form-field {
 }
 
 button[mat-raised-button]:hover {
- background-color: #d78e35; /* un azul más oscuro al pasar el mouse */
+ background-color: #35c27c; /* un azul más oscuro al pasar el mouse */
 }
