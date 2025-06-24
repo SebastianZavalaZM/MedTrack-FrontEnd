@@ -1,0 +1,15 @@
+<mat-toolbar class="custom-toolbar">
+  <div>
+    <button mat-button [matMenuTriggerFor]="menuServer" class="btn-rojo">
+      <mat-icon>computer</mat-icon>
+      Usuarios
+    </button>
+  </div>
+
+</mat-toolbar>
+<mat-menu #menuServer="matMenu">
+  <button mat-menu-item routerLink="/servidores">Listar</button>
+  <button mat-menu-item routerLink="/servidores/formulario">Registrar</button>
+  <button mat-menu-item routerLink="/servidores/busquedasproveedor">Buscar por proveedor</button>
+</mat-menu>
+
