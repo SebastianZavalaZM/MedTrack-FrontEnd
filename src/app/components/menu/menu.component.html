@@ -1,11 +1,11 @@
 <mat-toolbar class="custom-toolbar">
   <div>
     <button mat-button [matMenuTriggerFor]="menuTipoEnfermedad" class="btn-rojo">
-      <mat-icon>computer</mat-icon>
+      <mat-icon style="color: #d21919;">local_hospital</mat-icon>
       Tipo de enfermedades
     </button>
     <button mat-button [matMenuTriggerFor]="menuEnfermedad" class="btn-azul">
-      <mat-icon>healing</mat-icon>
+      <mat-icon style="color: #199ed2;" >healing</mat-icon>
       Enfermedades
     </button>
   </div>
@@ -20,5 +20,6 @@
 <mat-menu #menuEnfermedad="matMenu">
   <button mat-menu-item routerLink="/enfermedades/listas">Listar</button>
   <button mat-menu-item routerLink="/enfermedades/listas/formulario">Registrar</button>
-  <button mat-menu-item routerLink="/enfermedades/listas/buscarPorNombre">Buscar por nombre</button>
+  <button mat-menu-item routerLink="/enfermedades/listas/contar-nivel-riesgo">Contador nivel riesgo</button>
 </mat-menu>
+
