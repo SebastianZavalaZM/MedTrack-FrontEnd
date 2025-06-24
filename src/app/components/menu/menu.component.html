@@ -1,15 +1,24 @@
 <mat-toolbar class="custom-toolbar">
   <div>
-    <button mat-button [matMenuTriggerFor]="menuServer" class="btn-rojo">
+    <button mat-button [matMenuTriggerFor]="menuTipoEnfermedad" class="btn-rojo">
       <mat-icon>computer</mat-icon>
-      Usuarios
+      Tipo de enfermedades
+    </button>
+    <button mat-button [matMenuTriggerFor]="menuEnfermedad" class="btn-azul">
+      <mat-icon>healing</mat-icon>
+      Enfermedades
     </button>
   </div>
 
 </mat-toolbar>
-<mat-menu #menuServer="matMenu">
-  <button mat-menu-item routerLink="/servidores">Listar</button>
-  <button mat-menu-item routerLink="/servidores/formulario">Registrar</button>
-  <button mat-menu-item routerLink="/servidores/busquedasproveedor">Buscar por proveedor</button>
+<mat-menu #menuTipoEnfermedad="matMenu">
+  <button mat-menu-item routerLink="/tipoenfermedades/listas">Listar</button>
+  <button mat-menu-item routerLink="/tipoenfermedades/listas/formulario">Registrar</button>
+  <button mat-menu-item routerLink="/tipoenfermedades/listas/buscarPorNombre">Buscar por nombre</button>
 </mat-menu>
 
+<mat-menu #menuEnfermedad="matMenu">
+  <button mat-menu-item routerLink="/enfermedades/listas">Listar</button>
+  <button mat-menu-item routerLink="/enfermedades/listas/formulario">Registrar</button>
+  <button mat-menu-item routerLink="/enfermedades/listas/buscarPorNombre">Buscar por nombre</button>
+</mat-menu>
