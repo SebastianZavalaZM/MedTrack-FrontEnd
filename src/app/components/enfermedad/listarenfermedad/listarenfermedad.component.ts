@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 
+
 @Component({
   selector: 'app-listarenfermedad',
   imports: [
