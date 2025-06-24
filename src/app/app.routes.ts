@@ -6,7 +6,7 @@ import { BuscarComponent } from './components/tipoenfermedad/buscar/buscar.compo
 
 import { EnfermedadComponent } from './components/enfermedad/enfermedad.component';
 import { InsertareditareComponent } from './components/enfermedad/insertareditar/insertareditar.component';
-
+import { ContadornvlriesgoComponent } from './components/enfermedad/contadornvlriesgo/contadornvlriesgo.component';
 
 export const routes: Routes = [
   {
@@ -37,6 +37,9 @@ export const routes: Routes = [
       {
         path:'ediciones/:id',component:InsertareditareComponent
       },
+       {
+        path:'contar-nivel-riesgo',component:ContadornvlriesgoComponent
+      }
 
     ]
 
